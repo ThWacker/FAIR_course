@@ -4,9 +4,9 @@ import datetime as dt
 import matplotlib.pyplot as plt
 
 # https://data.nasa.gov/resource/eva.json (with modifications)
-data_f = open('eva-data.json', 'r')
-data_t = open('eva-data.csv','w')
-g_file = 'myplot.png'
+input_json = open('eva-data.json', 'r')
+spacewalks_cvs = open('eva-data.csv','w')
+spacewalks_plot = 'myplot.png'
 
 fieldnames = ("EVA #", "Country", "Crew    ", "Vehicle", "Date", "Duration", "Purpose")
 
@@ -14,14 +14,14 @@ data=[]
 
 
 for i in range(374):
-    line=data_f.readline()
+    line=input_json.readline()
     print(line)
     data.append(json.loads(line[1:-1]))
 #data.pop(0)
 ## Comment out this bit if you don't want the spreadsheet
 
 
-w=csv.writer(data_t)
+spacewalks_csv_temp=csv.writer(spacewalks_cvs)
 
 
 
@@ -32,7 +32,7 @@ j=0
 for i in data:
     print(data[j])
     # and this bit
-    w.writerow(data[j].values())
+    spacewalks_csv_temp.writerow(data[j].values())
     if 'duration' in data[j].keys():
         tt=data[j]['duration']
         if tt == '':
