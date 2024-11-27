@@ -1,6 +1,3 @@
-import json
-import csv
-import datetime as dt
 import matplotlib.pyplot as plt
 import pandas as pd
 
@@ -10,8 +7,6 @@ spacewalks_csv = open('eva-data.csv','w')
 spacewalks_plot = 'myplot.png'
 
 fieldnames = ("EVA #", "Country", "Crew    ", "Vehicle", "Date", "Duration", "Purpose")
-
-data=[]
 
 eva_df= pd.read_json(input_json, convert_dates=['date'])
 eva_df['eva']=eva_df['eva'].astype(float)
