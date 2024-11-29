@@ -14,6 +14,9 @@ authors:
   - given-names: Emma
     family-names: Worthington
     email: emma.worthington@noc.ac.uk
+ - given-names: Amber 
+    family-names: Walsh
+    email: amber.walsh@noc.ac.uk
 repository-code: 'https://github.com/ThWacker/FAIR_course'
 keywords:
   - Spacewalks Data
