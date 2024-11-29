@@ -1,3 +1,5 @@
+[![DOI](https://sandbox.zenodo.org/badge/894950858.svg)](https://handle.stage.datacite.org/10.5072/zenodo.137900)
+
 # Spacewalks
 
 ## Overview
