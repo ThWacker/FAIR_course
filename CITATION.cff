@@ -15,6 +15,8 @@ repository-code: 'https://github.com/ThWacker/FAIR_course'
 keywords:
   - Spacewalks Data
 license: MIT
+version: 1.0.1
 identifiers:
   - type: doi
     10.5072/zenodo.137901
+date-released: 2024-11-29
