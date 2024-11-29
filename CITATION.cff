@@ -11,7 +11,10 @@ authors:
   - given-names: 'Theresa '
     family-names: Wacker
     email: t.wacker2@exeter.ac.uk
-  - given-names: Amber 
+  - given-names: Emma
+    family-names: Worthington
+    email: emma.worthington@noc.ac.uk
+ - given-names: Amber 
     family-names: Walsh
     email: amber.walsh@noc.ac.uk
 repository-code: 'https://github.com/ThWacker/FAIR_course'
